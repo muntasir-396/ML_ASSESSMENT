@@ -1,13 +1,4 @@
-"""
-predict.py
-----------
-Load the trained model and generate the two required output files:
 
-  1. validation_predictions.csv   — 12,000 rows (TE-000001 to TE-012000)
-  2. data/december_chart_inputs.csv — 31 rows, with predicted_rate filled in
-
-Then run score.py to validate both files and generate candidate_december.png.
-"""
 
 import sys
 import os

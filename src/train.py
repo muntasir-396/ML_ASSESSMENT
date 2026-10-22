@@ -1,19 +1,4 @@
-"""
-train.py
---------
-Train a LightGBM model to predict freight rates, using a time-based split.
 
-Why LightGBM?
-  - Handles tabular data better than linear models and simpler trees.
-  - Fast to train on 48k rows.
-  - Naturally handles the mix of numeric and categorical features.
-  - Well-tested in logistics/pricing domains.
-
-Why time-based split instead of random K-Fold?
-  - The validation set is November–December (the future).
-  - If we randomly shuffle and split, future data leaks into training.
-  - We simulate the real task: train on Jan–Aug, evaluate on Sep–Oct.
-"""
 
 import sys
 import os

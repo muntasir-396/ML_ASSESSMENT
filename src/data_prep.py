@@ -1,15 +1,3 @@
-"""
-data_prep.py
-------------
-Load the raw CSVs, fix missing values, and return clean DataFrames.
-
-Why we need this:
-  - 'weight' has ~300 missing rows in train and ~165 in validation.
-    We fill each one with the median weight for that equipment type
-    (Dry Van, Reefer, Flatbed all have different typical weights).
-  - 'market_index' has ~374 missing rows in train and ~249 in validation.
-    It moves with the date, so we fill it with that day's average.
-"""
 
 import pandas as pd
 

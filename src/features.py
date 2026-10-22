@@ -1,17 +1,3 @@
-"""
-features.py
------------
-Turn raw columns into useful numbers that a model can learn from.
-
-Every feature here is designed to be intuitive and explainable:
-
-  DISTANCE features  → how far is the truck going?
-  TIME features      → what day/month/season is it?
-  LOAD features      → how heavy and what type of cargo?
-  MARKET features    → what is the market doing right now?
-  INTERACTION        → combined signals (e.g. distance × market pressure)
-"""
-
 import numpy as np
 import pandas as pd
 
